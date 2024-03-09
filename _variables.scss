@@ -1,0 +1,68 @@
+/* Color */
+$mainColor: #c80909;
+$secColor: #780505;
+$white: #ebedee;
+
+
+/* Breakpoints */
+$mobile: 768px;
+$laptop: 1024px;
+$computer: 1440px;
+
+
+@mixin small_button {
+    border-radius: 10px;
+    background-color: $mainColor;
+    border: none;
+    width: 40%;
+    padding: .5rem;
+    min-width: max-content;
+    white-space: wrap;
+    max-width: 150px;
+    font-size: medium;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $secColor;
+        color: white;
+        transition: all .5s ease-in-out;
+    }
+}
+
+@mixin button {
+    border-radius: 10px;
+    background-color: $mainColor;
+    border: none;
+    width: 45%;
+    padding: .8rem;
+    min-width: 150px;
+    max-width: 200px;
+    font-size: large;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $secColor;
+        color: white;
+        transition: all .5s ease-in-out;
+    }
+}
+
+@mixin container {
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+@mixin flexCenterColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    @media screen and (min-width:$computer) {
+        flex-direction: row;
+    }
+}

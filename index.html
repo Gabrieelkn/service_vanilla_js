@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/97c92d9ece.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Service landing page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_wrapper">
+        <a href="/">
+          <img src="/utils/logo.svg" width="100" height="100" alt="" />
+        </a>
+        <button id="hamburger" class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav id="nav" class="nav">
+          <ul>
+            <li>
+              <a href="/#about"> About us </a>
+            </li>
+            <li>
+              <a href="/#services"> Services </a>
+            </li>
+            <li>
+              <a href="/#prices"> Prices </a>
+            </li>
+            <li>
+              <a href="/#contact"> Contact </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="overlay">
+        <div class="wrapper">
+          <span>Car service</span>
+          <h1>Fix the problems of your personal car</h1>
+          <a href="#contact">
+            <button class="main_button">Call us</button>
+          </a>
+        </div>
+      </div>
+    </main>
+    <div class="container">
+      <section id="about" class="about">
+        <div class="about_wrapper">
+          <h2>About us</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at
+            tincidunt nisl. Fusce purus sapien, cursus ac molestie sed, placerat
+            in ex. Curabitur et nunc ut arcu condimentum rhoncus. Fusce eget
+            scelerisque ex. Nunc porttitor, urna et ullamcorper consequat, magna
+            lorem vulputate lectus, sed dignissim elit lectus ac nulla. Sed non
+            nisl a metus euismod maximus quis eget lorem. Duis auctor viverra
+            ligula vel porttitor. In hac habitasse platea dictumst. Pellentesque
+            purus nulla, consectetur a neque et, ullamcorper pellentesque justo.
+            Morbi mattis venenatis mi. Donec mollis diam metus, eget semper
+            massa finibus sit amet.
+          </p>
+        </div>
+        <img src="/utils/aboutus.jpg" width="300" height="200" alt="image" />
+      </section>
+      <section id="services" class="services">
+        <h2>Some of the services we offer</h2>
+        <div class="services_wrapper">
+          <div class="card">
+            <div class="services_overlay">
+              <h3>Maintenance</h3>
+              <p>We change the oil and filters of the car</p>
+              <button class="services_button">View prices</button>
+            </div>
+            <image
+              src="/utils/oil.jpg"
+              height="400"
+              width="300"
+              alt="service"
+              class="background"
+            />
+          </div>
+          <div class="card">
+            <div class="services_overlay">
+              <h3>Brake system repair</h3>
+              <p>We will change your brake pads, rotors, clips and calipers</p>
+              <button class="services_button">View prices</button>
+            </div>
+            <image
+              src="/utils/carBreaks.jpg"
+              height="400"
+              width="300"
+              alt="service"
+              class="background"
+            />
+          </div>
+          <div class="card">
+            <div class="services_overlay">
+              <h3>Engine repair</h3>
+              <p>We will make your engine as good as on the first day</p>
+              <button class="services_button">View prices</button>
+            </div>
+            <image
+              src="/utils/engine.jpg"
+              height="400"
+              width="300"
+              alt="service"
+              class="background"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="prices" class="prices">
+        <h2>Prices</h2>
+        <table class="table">
+          <thead class="thead">
+            <tr class="row row_header">
+              <th class="cell">Brake system repair</th>
+              <th class="cell">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row">
+              <td class="cell" data-title="Service">Changing brake liquid</td>
+              <td class="cell" data-title="Price">100$</td>
+            </tr>
+            <tr class="row">
+              <td class="cell" data-title="Service">Changing brake pads</td>
+              <td class="cell" data-title="Price">100$</td>
+            </tr>
+            <tr class="row">
+              <td class="cell" data-title="Service">Changing brake discs</td>
+              <td class="cell" data-title="Price">100$</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table">
+          <thead class="thead">
+            <tr class="row row_header">
+              <th class="cell">Maintenance</th>
+              <th class="cell">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row">
+              <td class="cell" data-title="Service">Changing oil</td>
+              <td class="cell" data-title="Price">100$</td>
+            </tr>
+            <tr class="row">
+              <td class="cell" data-title="Service">Changing oil filter</td>
+              <td class="cell" data-title="Price">100$</td>
+            </tr>
+            <tr class="row">
+              <td class="cell" data-title="Service">Changing fuel filter</td>
+              <td class="cell" data-title="Price">100$</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table">
+          <thead class="thead">
+            <tr class="row row_header">
+              <th class="cell">Engine repair</th>
+              <th class="cell">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row">
+              <td class="cell" data-title="Service">Changing engine block</td>
+              <td class="cell" data-title="Price">200$</td>
+            </tr>
+            <tr class="row">
+              <td class="cell" data-title="Service">Changing piston</td>
+              <td class="cell" data-title="Price">100$</td>
+            </tr>
+            <tr class="row">
+              <td class="cell" data-title="Service">Changing chamshaft</td>
+              <td class="cell" data-title="Price">100$</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="contact" class="contact">
+        <h2>Contact us!</h2>
+        <div class="flex_container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41103.17079189879!2d22.66333491994506!3d44.642410351909426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475231c5a8871173%3A0x3370a1b752cbe6b!2sDrobeta-Turnu%20Severin!5e1!3m2!1sen!2sro!4v1709993192328!5m2!1sen!2sro"
+            class="map"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <form id="form" class="form" method="POST">
+            <h3>Send us a message!</h3>
+            <div class="form_inputs">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required minlength="3" />
+            </div>
+            <div class="form_inputs">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form_message">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                minlength="20"
+              ></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      ©MY BUSSINESS NAME
+      <p>
+        Logo by{" "}
+        <a
+          href="https://www.freepik.com/free-vector/gradient-car-service-logo-template_32378239.htm#query=car%20service%20logo&position=1&from_view=keyword&track=ais&uuid=7321e204-a4f2-43b6-9f01-9d5ca110fb15"
+        >
+          Freepik
+        </a>
+      </p>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
+</html>
