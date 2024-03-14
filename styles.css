@@ -456,6 +456,13 @@ ol {
   }
 }
 
+.map {
+  width: 100%;
+  min-height: 400px;
+  border: none;
+  border-radius: 5px;
+}
+
 .form {
   margin: auto;
   display: grid;
@@ -473,12 +480,9 @@ ol {
   width: 100%;
   gap: 1rem;
 }
-.form_inputs label {
-  padding: 0.3rem 0.3rem;
-}
 .form_inputs input {
   padding: 1rem 0.3rem;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid rgb(210, 209, 209);
   width: 100%;
   outline: none;
@@ -499,23 +503,12 @@ ol {
 .form_message textarea {
   height: 100%;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 5px;
   margin-top: 0.5rem;
   background-color: rgb(244, 242, 242);
   border: 1px solid rgb(189, 188, 188);
   resize: none;
-  outline: none;
-}
-.form_message textarea:focus {
-  outline: 1px solid #313131;
-}
-
-.map {
-  width: 100%;
-  min-height: 400px;
-  border: none;
-  border-radius: 5px;
 }
 
 .button {
@@ -533,45 +526,6 @@ ol {
   cursor: pointer;
   background-color: #780505;
   transition: all 0.3s ease-in-out;
-}
-
-.form {
-  margin: 1rem auto 0rem;
-  display: grid;
-  place-items: center;
-  row-gap: 1rem;
-  min-height: 450px;
-  width: 100%;
-  max-width: 700px;
-  font-size: min(5vw, 1.2rem);
-  padding-bottom: 1rem;
-}
-
-.form_inputs {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 1rem;
-}
-
-.form_message {
-  display: flex;
-  width: 100%;
-  margin-top: 1rem;
-  height: 200px;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.form_message textarea {
-  height: 100%;
-  width: 100%;
-  border-radius: 10px;
-  padding: 5px;
-  margin-top: 0.5rem;
-  background-color: rgb(244, 242, 242);
-  border: 1px solid rgb(189, 188, 188);
-  resize: none;
 }
 
 .footer {
